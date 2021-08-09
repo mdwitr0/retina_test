@@ -7,6 +7,13 @@
     <title>Retina test</title>
 </head>
 <body>
+    <style>
+        .image-frame__image_cropp {
+            height: 50vh;
+            width: 50vw;
+            object-fit: contain;
+        }
+    </style>
     <h1>Retina test</h1>
     <section class="image-frame">
         <h2>Original image</h2>
@@ -14,6 +21,12 @@
         <hr>
         <h2>2x image</h2>
         <img src="./test_2x.png" alt="2x image" class="image-frame__image">
+        <hr><hr>
+        <h2>Original cropped image</h2>
+        <img src="./test_original.jpg" alt="original image" class="image-frame__image image-frame__image_cropp">
+        <hr>
+        <h2>2x cropped image</h2>
+        <img src="./test_2x.png" alt="2x image" class="image-frame__image image-frame__image_cropp">
     </section>
 </body>
 </html>
